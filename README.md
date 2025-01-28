@@ -51,6 +51,11 @@ SELECT
 FROM netflix
 GROUP BY 1;
 ```
+### Output
+| type       | count      |
+|------------|------------|
+| Movie      | 6131       |
+| TV Show     | 2676      |
 
 **Objective:** Determine the distribution of content types on Netflix.
 
@@ -79,6 +84,12 @@ SELECT
 FROM RankedRatings
 WHERE rank = 1;
 ```
+### Output
+| type       | most_frequent_rating  |
+|------------|-----------------------|
+| Movie      | TV-MA                 |
+| TV Show    | TV-MA                 |
+
 
 **Objective:** Identify the most frequently occurring rating for each type of content.
 
